@@ -1,0 +1,32 @@
+<h1> how a 1977 statistical measure is helping humanity infer cellular communications</h1>
+<p> 
+    This story is about John Tukey, the alleged designer of the U-17 fighter plane in World war 2 and the inventor of the boxplot. 
+    Unfortunately, he died before I was born - but left something called Tukey's trimean that can be used to identify a position in a probability measure. 
+
+</p>
+<h2>
+    Inference of cell communication networks - a blog + summary of methods. 
+</h2>
+
+<p>Some known methods of doing this are Cellchat [1], NeuronChat [2] and TimeTalk [3]. 
+
+Cellchat and Neuronchat work on the idea of prior information about the existing kinds of interactions and their corresponding gene sequences that can be expected to be seen in the transcriptome level analysis. This prior information is used to then parse through the input sequences of geneXcells, to calculate an ensemble expectation for each ligand and receptor in a ligand-receptor pair involved in a communication pathway, throughout a group of cells of a certain type. Basically, Neuronchat and Cellchat models the abundance of ligands based on the expression of related genes.
+The output is a network of nodes corresponding to the different sub-groups of cells, and edges corresponding to the approximated strength of the communication. There are subtle design changes to this method, in the sense that a tri-mean is better than the mean at handling uncertainty in terms of gene expression as a subset of cell population. The ensemble average expression in a given cell group is calculated using Tukey's tri-mean. Tukey's trimean uses quartiles to root out 
+</p>
+<p>
+However, its fundamental inference mechanism is based on the coordinated expression of ligands and their cognate targets as defined in its database at those specific states.
+</p>
+<p>
+Timetalk, starts to assume that we don't know which specific ligand-target pairs are being used in a specific bioprocess, where we want to acknowledge the cell communication networks. So the potential regulatory relationships between the identified co-varying eLRs and the tTFs are inferred using Granger causality analysis (another statistical analysis method) on their respective temporal expression patterns. 
+</p>
+<p>
+This independence of the gene expression to the inferred type of communications, is important to understand or develop communication networks in novel settings - given we have a database of potential communication pairs or useful communication pairs that we want to analyse. 
+</p>
+<p>
+Some interesting questions as follow ups: 
+1. How far are we in terms of quantifying these existing communication pathways in its entirety for all our identified functions? As in - how many suspected unknown communication pathways are there in identifying functions? 
+2. How to generate novel communication pathways? (It is conventional that evolution uptil now has seemingly sampled less than 1% of possibilities in terms of biological compatibilities) 
+</p>
+[1] Cellchat -  https://rdcu.be/ed5Ll 
+[2] Neuronchat - https://rdcu.be/ed5MA 
+[3] Time Talk - https://rdcu.be/ed5M3 
